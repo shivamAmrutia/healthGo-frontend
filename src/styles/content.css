@@ -1,0 +1,123 @@
+
+.heading{
+    margin-top: 2rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+}
+
+
+.btn:hover{
+  color: rgb(169, 241, 241) !important;
+  background-color: rgb(68, 68, 68) !important;
+}
+
+.card{
+    transition: all 0.3s ease-out;
+}
+    
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.25);
+}
+
+.card-text{
+    height: 62%;
+    font-size: large;
+}
+
+.oneRow{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section { 
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 5px #000;
+  }
+
+  .parallax img{
+    height: 450px;
+    filter: contrast(150%) drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.671));
+    position: relative;
+    bottom: 5rem;
+  }
+
+  .parallax::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+  }
+
+  .bg1::after {
+    background-image: url("../../public/graphics/parllax.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left; 
+    filter: blur(6px) grayscale(40%) ;
+  }
+
+  .parallax h1{
+    color: black;
+    position: relative;
+    bottom: 9rem;
+  }
+
+  #content{
+      margin-top: 10rem;
+  }
+
+  .content{
+    margin-bottom: 6rem;
+  }
+
+  .content h1{
+    margin-bottom: 3rem;
+    text-decoration: underline;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+  }
+
+  .text p{
+      font-size: 1.5rem;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .text p::selection{
+      background-color: rgb(169, 241, 241);
+  }
+
+  .content h1::selection{
+    background-color: rgb(169, 241, 241);
+  }
+
+  .content h3::selection{
+    background-color: rgb(169, 241, 241);
+  }
+  
+
+/* ...............................................media queries stars here.............................................................*/
+
+@media screen and (max-width: 720px) {
+
+  .oneRow{
+    display: grid !important;
+    justify-content: center;
+  }
+
+  .card{
+    height: 500px;
+  }
+}
+

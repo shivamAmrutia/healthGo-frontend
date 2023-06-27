@@ -1,0 +1,31 @@
+#abt-content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#abt-content div{
+    padding: 4rem;
+}
+
+#abt-content div h1{
+    font-weight: 900;
+}
+
+.container{
+    margin-top: 5rem;
+    
+}
+
+.container h1::selection, #abt-content div h2::selection , #abt-content div p::selection{
+    background-color: rgb(169, 241, 241);
+}
+
+.container h1, #abt-content div h2 , #abt-content div {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}   
+
+@media screen and (max-width: 768px){
+    #abt-content{
+        display: flex;
+        flex-direction: column;
+    }
+}

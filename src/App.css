@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* for the global stage wrapper */
+.wrapper {
+    height: 93.75vh;
+    overflow-x: hidden;
+    perspective: 2px;
   }
+
+/* navbar */
+
+#nav{
+    background-color: rgb(169, 241, 241) !important;
+    width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* footer */
+/* for footer icons*/
+.fa {
+    padding: 5px;
+    font-size: 40px !important;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 12px;
+    border-radius: 50%;
+    transition: all 330ms ease-out;
+    background-color: white;
+  }
+  
+  .fa:hover {
+    color: rgb(0, 0, 0);
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+  }
+  
+  .fa-facebook {
+    /* color: #3B5998; */
+    color:rgb(36, 36, 36);
+  }
+  
+  .fa-twitter {
+    /* color: #55ACEE; */
+    color:rgb(36, 36, 36);
+  }
+  
+  .fa-google {
+    /* color: #dd4b39; */
+    color:rgb(36, 36, 36);
+  }
+  .fa-youtube {
+    /* color: #bb0000; */
+    color:rgb(36, 36, 36);
+  }
+  
+  .fa-instagram {
+    /* color: #125688; */
+    color:rgb(36, 36, 36);
+  }
+
+  .footer{
+    background-color: rgb(36, 36, 36);
+    height: fit-content;
+    padding: 20px;
+}
+
+.social{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.links{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  right: 15px;
+}
+
+.links ul li , .links ul li a {
+  display: inline;
+  list-style-type: none;
+  text-decoration: none;
   color: white;
+  margin: 0.3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.links ul li a:hover{
+  color: rgb(112, 236, 236);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cr{
+  display: flex;
+  color: rgb(90, 90, 90);
+  justify-content: center;
 }
+
