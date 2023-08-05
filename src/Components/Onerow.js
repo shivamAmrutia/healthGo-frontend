@@ -18,7 +18,7 @@ export default function Onerow() {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3001/subscribers')
+        fetch('https://healthgo-wm6x.onrender.com/subscribers')
          .then((res) => res.json())
          .then((data) => {
             console.log(data);
