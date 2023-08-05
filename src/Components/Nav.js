@@ -6,7 +6,7 @@ export default function Nav() {
     <div>
       <nav className="navbar navbar-expand-lg navbar-light sticky-top slide-in-left" id="nav">
       <div className="container-fluid">
-        <a className="navbar-brand">NetMeds</a>
+        <div className="navbar-brand">NetMeds</div>
         <button
           className="navbar-toggler"
           type="button"
