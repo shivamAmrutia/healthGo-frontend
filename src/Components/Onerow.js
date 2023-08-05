@@ -59,7 +59,7 @@ export default function Onerow() {
             </div>
         ))}
         {posts.map( (elem) => (
-            <Modal show={show == elem._id} onHide={handleClose}>
+            <Modal show={show === elem._id} onHide={handleClose}>
                 <Modal.Header closeButton>
                 <Modal.Title>{elem.diseaseName}</Modal.Title>
                 </Modal.Header>

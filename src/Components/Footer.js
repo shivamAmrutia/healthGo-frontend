@@ -5,11 +5,11 @@ export default function Footer() {
   return (
     <div className="footer">
         <div className="social">
-          <a href="#" className="fa fa-facebook"></a>
-          <a href="#" className="fa fa-twitter"></a>
-          <a href="#" className="fa fa-google"></a>
-          <a href="#" className="fa fa-youtube"></a>
-          <a href="#" className="fa fa-instagram"></a>
+          <a  className="fa fa-facebook"></a>
+          <a  className="fa fa-twitter"></a>
+          <a  className="fa fa-google"></a>
+          <a  className="fa fa-youtube"></a>
+          <a  className="fa fa-instagram"></a>
         </div>
         <div className="links">
           <ul>
